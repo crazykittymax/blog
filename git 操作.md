@@ -6,15 +6,15 @@
 - [git Linux 版](https://book.git-scm.com/2_installing_git.html)
 
 ### 创建新仓库
-创建新文件夹，打开右键，git bash here，然后执行
-`$ git init`
+创建新文件夹，在项目目录右键打开，git bash here，然后执行
+- `$ git init`
 以创建新的 git 仓库。
 
 ### 检出仓库
 执行如下命令以创建一个本地仓库的克隆版本：
-`$ git clone /path/to/repository`
+- `$ git clone /path/to/repository`
 如果是远端服务器上的仓库，你的命令会是这个样子：
-`$ git clone username@host:/path/to/repository`
+- `$ git clone username@host:/path/to/repository`
 
 ### 工作流
 你的本地仓库由 git 维护的三棵“树”组成。第一个是你的 工作目录，它持有实际文件；第二个是 暂存区（Index），它像个缓存区域，临时保存你的改动；最后是 HEAD，它指向你最后一次提交的结果。
@@ -22,11 +22,11 @@
 
 ### 添加和提交
 你可以提出更改（把它们添加到暂存区），使用如下命令：
-`$ git add <filename>`
-`$ git add *`
-`$ git add ./`
+- `$ git add <filename>`
+- `$ git add *`
+- `$ git add ./`
 这是 git 基本工作流程的第一步；使用如下命令以实际提交改动：
-`$ git commit -m "代码提交信息"`
+- `$ git commit -m "代码提交信息"`
 现在，你的改动已经提交到了 HEAD，但是还没到你的远端仓库。
 
 ### 推送改动
